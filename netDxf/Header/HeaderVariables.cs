@@ -115,10 +115,10 @@ namespace netDxf.Header
             get { return (DxfVersion) this.variables[HeaderVariableCode.AcadVer].Value; }
             set
             {
-                if (value < DxfVersion.AutoCad2000)
-                {
-                    throw new NotSupportedException("Only AutoCad2000 and newer DXF versions are supported.");
-                }
+                //if (value < DxfVersion.AutoCad2000)
+                //{
+                //    throw new NotSupportedException("Only AutoCad2000 and newer DXF versions are supported.");
+                //}
                 this.variables[HeaderVariableCode.AcadVer].Value = value;
             }
         }

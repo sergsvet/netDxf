@@ -324,7 +324,8 @@ namespace netDxf.Tables
             {
                 if (value < 0.01 || value > 100.0)
                 {
-                    throw new ArgumentOutOfRangeException(nameof(value), value, "The TextStyle width factor valid values range from 0.01 to 100.");
+                    return;
+                    //throw new ArgumentOutOfRangeException(nameof(value), value, "The TextStyle width factor valid values range from 0.01 to 100.");
                 }
                 this.widthFactor = value;
             }

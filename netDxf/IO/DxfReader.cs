@@ -156,10 +156,10 @@ namespace netDxf.IO
 
             DxfVersion version = DxfDocument.CheckDxfFileVersion(stream, out this.isBinary);
 
-            if (version < DxfVersion.AutoCad2000)
-            {
-                throw new DxfVersionNotSupportedException(string.Format("DXF file version not supported : {0}.", version), version);
-            }
+            //if (version < DxfVersion.AutoCad2000)
+            //{
+            //    throw new DxfVersionNotSupportedException(string.Format("DXF file version not supported : {0}.", version), version);
+            //}
 
             Encoding encoding;
             if (version < DxfVersion.AutoCad2007)
@@ -435,10 +435,10 @@ namespace netDxf.IO
                     case HeaderVariableCode.AcadVer:
                         string version = this.chunk.ReadString();
                         DxfVersion acadVer = StringEnum<DxfVersion>.Parse(version, StringComparison.OrdinalIgnoreCase);
-                        if (acadVer < DxfVersion.AutoCad2000)
-                        {
-                            throw new NotSupportedException("Only AutoCad2000 and higher DXF versions are supported.");
-                        }
+                        //if (acadVer < DxfVersion.AutoCad2000)
+                        //{
+                        //    throw new NotSupportedException("Only AutoCad2000 and higher DXF versions are supported.");
+                        //}
                         this.doc.DrawingVariables.AcadVer = acadVer;
                         this.chunk.Next();
                         break;
