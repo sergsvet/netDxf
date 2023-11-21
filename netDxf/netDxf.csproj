@@ -28,14 +28,14 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>netDxf.xml</DocumentationFile>
-    <NoWarn>1701;1702</NoWarn>
+    <NoWarn>1701;1702;1591</NoWarn>
     <OutputPath></OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DocumentationFile>netDxf.xml</DocumentationFile>
-    <NoWarn>1701;1702</NoWarn>
+    <NoWarn>1701;1702;1591</NoWarn>
     <OutputPath />
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
@@ -44,7 +44,7 @@
     <DocumentationFile>netDxf.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <NoWarn>1701;1702</NoWarn>
+    <NoWarn>1701;1702;1591</NoWarn>
     <OutputPath></OutputPath>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
@@ -53,7 +53,7 @@
     <DocumentationFile>netDxf.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <NoWarn>1701;1702</NoWarn>
+    <NoWarn>1701;1702;1591</NoWarn>
     <OutputPath />
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
